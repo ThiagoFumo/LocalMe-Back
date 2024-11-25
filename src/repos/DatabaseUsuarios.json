@@ -1,0 +1,37 @@
+{
+    "Users": [
+        {
+            "Nombre": "leo",
+            "Contraseña": "1023",
+            "edad": 23,
+            "email": "pisculichi@gmail.com",
+            "IdUsuario": 472241780948,
+            "postsIds": [
+                533026717659
+            ],
+            "likesIds": [
+                52507671686
+            ]
+        },
+        {
+            "Nombre": "Nicost",
+            "Contraseña": "1234",
+            "edad": 16,
+            "email": "nstchigel@gmail.com",
+            "IdUsuario": 683202238438,
+            "postsIds": [
+                52507671686
+            ],
+            "likesIds": []
+        },
+        {
+            "Nombre": "Francisco",
+            "Contraseña": "123456",
+            "edad": 16,
+            "email": "fran.e.negri@gmail.com",
+            "IdUsuario": 676528413394,
+            "postsIds": [],
+            "likesIds": []
+        }
+    ]
+}

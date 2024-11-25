@@ -1,0 +1,42 @@
+{
+    "Posts": [
+        {
+            "IdUsuario": 472241780948,
+            "Imagen": "pepito.png",
+            "Titulo": "el parque mas dou",
+            "Contenido": "la verdad que uno de los parques mas lindos que vi en toda mi vida",
+            "IdPost": 533026717659,
+            "fecha": "2024-09-05T17:51:48.464Z",
+            "Comentarios": [
+                {
+                    "usuarioId": 472241780948,
+                    "Contenido": "para mas comentarios asi siganme",
+                    "IdComentario": 897473702818,
+                    "cantLikes": 0,
+                    "fecha": "2024-09-05T17:53:36.296Z",
+                    "UsersLikes": []
+                }
+            ],
+            "CantLikes": 0
+        },
+        {
+            "IdUsuario": 683202238438,
+            "Imagen": "test.jpg",
+            "Titulo": "Chango mas",
+            "Contenido": "TIenen 2x1",
+            "IdPost": 52507671686,
+            "fecha": "2024-09-05T17:57:18.049Z",
+            "Comentarios": [
+                {
+                    "usuarioId": 472241780948,
+                    "Contenido": "gracias por comentar!!!",
+                    "IdComentario": 36776622286,
+                    "cantLikes": 0,
+                    "fecha": "2024-09-05T17:58:43.944Z",
+                    "UsersLikes": []
+                }
+            ],
+            "CantLikes": 1
+        }
+    ]
+}
