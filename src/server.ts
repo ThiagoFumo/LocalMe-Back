@@ -47,7 +47,6 @@ if (EnvVars.NodeEnv === NodeEnvs.Production.valueOf()) {
 
 const apiRouter = Router();
 apiRouter.use(Paths.Users.Base, Api.UserRouter);
-apiRouter.use(Paths.Comments.Base, Api.CommentRouter);
 apiRouter.use(Paths.Posts.Base, Api.PostRouter);
 
 

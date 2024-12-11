@@ -10,7 +10,6 @@ const INVALID_CONSTRUCTOR_PARAM = 'nameOrObj arg must a string or an object ' +
     email: string;
     IdUsuario: number;
     postsIds: number[];
-    likesIds: number[];
 }
 
 export function newUsuario(
@@ -20,7 +19,6 @@ export function newUsuario(
     email?: string,
     id?: number,
     postsIds?: number[],
-    likesIds?: number[]
 ): IUsuario {
     return {
         Nombre: nombre ?? '',
@@ -29,7 +27,6 @@ export function newUsuario(
         email: email ?? '',
         IdUsuario: id ?? -1,
         postsIds: postsIds ?? [],
-        likesIds: likesIds ?? [],
     };
 }
 
@@ -52,7 +49,6 @@ export function isUsuario(arg: unknown): arg is IUsuario {
     console.log(typeof usuario.email === 'string')
     console.log(typeof usuario.IdUsuario === 'number')
     console.log(Array.isArray(usuario.postsIds))
-    console.log(Array.isArray(usuario.likesIds))
 
     return (
         typeof usuario.Nombre === 'string' &&
@@ -60,8 +56,7 @@ export function isUsuario(arg: unknown): arg is IUsuario {
         typeof usuario.edad === 'number' &&
         typeof usuario.email === 'string' &&
         typeof usuario.IdUsuario === 'number' &&
-        Array.isArray(usuario.postsIds) &&
-        Array.isArray(usuario.likesIds)
+        Array.isArray(usuario.postsIds) 
     );
 }
 
