@@ -8,7 +8,7 @@ import { IReq, IRes } from './types/express/misc';
 //functions
 
 //conseguir todos los posts//
-async function getPosts(req: IReq, res: IRes) {
+async function getPosts(_: IReq, res: IRes) {
   const posts = await SystemService.getPosts();
   return res.status(HttpStatusCodes.OK).json({ posts });
 }

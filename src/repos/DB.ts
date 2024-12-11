@@ -1,8 +1,5 @@
-import jsonfile from "jsonfile";
 
-import Mongoose, { Connection, Model, Schema } from "mongoose";
-import exp from "constants";
-import { MongoOIDCError } from "mongodb";
+import Mongoose, { Connection, Schema } from "mongoose";
 import { IUsuario } from "@src/models/Usuario";
 import { IPost } from "@src/models/Post";
 

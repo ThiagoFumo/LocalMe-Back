@@ -1,12 +1,8 @@
 import { Router } from 'express';
-import jetValidator from 'jet-validator';
 import Paths from '../constants/Paths';
 import SystemRoutes from './SystemRoutes';
-import { IPost } from '@src/models/Post';
-import { IComentario } from '@src/models/Comentario';
-import { IUsuario } from '@src/models/Usuario';
 
-// Add SystemRoutes
+// Add SystemRoutes t
 const UserRouter = Router();
 const CommentRouter = Router();
 const PostRouter = Router();

@@ -1,11 +1,9 @@
 import { IPost } from '@src/models/Post';
 import { IComentario } from '@src/models/Comentario';
 import { getRandomInt } from '@src/util/misc';
-import { db, UserModel, PostModel } from './DB';
-import orm1 from './userorm';
-import orm2 from './Postorm';
+import { UserModel, PostModel } from './DB';
 import { IUsuario } from '@src/models/Usuario';
-import Postorm from './Postorm';
+
 
 //conseguir todos los posts//
 async function getPosts(): Promise<IPost[]> { 

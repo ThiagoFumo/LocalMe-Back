@@ -55,7 +55,7 @@ app.use(Paths.Base, apiRouter);
 
 //add error handler
 
-app.use((err: Error, _: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, _: Request, res: Response, __: NextFunction) => {
   if (EnvVars.NodeEnv !== NodeEnvs.Test.valueOf()) {
     logger.err(err, true);
   }

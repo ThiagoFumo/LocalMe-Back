@@ -1,5 +1,5 @@
 /**
- * Remove old files, copy front-end ones.
+ * Remove old files, c  opy front-end ones.
  */
 
 import fs from 'fs-extra';

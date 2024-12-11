@@ -1,6 +1,6 @@
 import { Response } from 'supertest';
 
-import { IUser } from '@src/models/User';
+import { IUsuario } from '../../src/models/Usuario';
 
 
 // Misc
@@ -13,6 +13,6 @@ export type TApiCb = (res: TRes) => void;
 // typescript errors.
 type TBody = {
   [key: string]: unknown;
-  user?: IUser;
-  users?: IUser[];
+  user?: IUsuario;
+  users?: IUsuario[];
 }
