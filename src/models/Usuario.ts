@@ -9,7 +9,7 @@ const INVALID_CONSTRUCTOR_PARAM = 'nameOrObj arg must a string or an object ' +
     edad: number;
     email: string;
     IdUsuario: number;
-    postsIds: number[];
+    postsIds?: number[];
 }
 
 export function newUsuario(

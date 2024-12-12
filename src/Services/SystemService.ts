@@ -33,7 +33,7 @@ function addPost(post: IPost): Promise<void> {
 
 //añadir un usuario//
 function addUsuario(usuario: IUsuario): Promise<void> {
-  if (!usuario || !usuario.IdUsuario || !usuario.Nombre || !usuario.email || !usuario.Contraseña) {
+  if (!usuario || !usuario.IdUsuario || !usuario.Nombre || !usuario.email || !usuario.Contraseña || !usuario.postsIds) {
     throw new RouteError(
       HttpStatusCodes.BAD_REQUEST,
       'Datos incompletos para crear el usuario.'

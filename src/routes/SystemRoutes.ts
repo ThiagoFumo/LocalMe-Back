@@ -36,6 +36,18 @@ async function addPost(req: IReq<{ post: IPost }>, res: IRes) {
 //añadir un usuario//
 async function addUsuario(req: IReq<{ usuario: IUsuario }>, res: IRes) {
   const { usuario } = req.body;
+
+  // Verificar que el cuerpo de la solicitud contiene el campo 'usuario'
+  console.log('Usuario recibido:', usuario);
+
+  if (!usuario) {
+    return res.status(HttpStatusCodes.BAD_REQUEST).json({ message: 'Faltan datos para crear el usuario' });
+  }
+
+  if (!usuario.Nombre || !usuario.Contraseña || !usuario.edad || !usuario.email || !usuario.IdUsuario || !usuario.postsIds) {
+    return res.status(HttpStatusCodes.BAD_REQUEST).json({ message: 'Faltan campos obligatorios' });
+  }
+
   await SystemService.addUsuario(usuario);
   return res.status(HttpStatusCodes.CREATED).end();
 }

@@ -4,14 +4,17 @@ import { IPost } from "@src/models/Post";
 
 // Definición de esquemas
 const UserSchema: Schema = new Mongoose.Schema(
-    {
-        Nombre: { type: String, required: true },
-        Contraseña: { type: String, required: true },
-        edad: { type: Number, required: true },
-        email: { type: String, required: true }
-    },
-    { collection: "users", versionKey: false }
+  {
+    Nombre: { type: String, required: true },
+    Contraseña: { type: String, required: true },
+    edad: { type: Number, required: true },
+    email: { type: String, required: true },
+    IdUsuario: { type: Number, required: true, unique: true }, // IdUsuario agregado
+    postsIds: { type: [Number], default: [] } // postsIds agregado (array de números)
+  },
+  { collection: "users", versionKey: false }
 );
+
 
 const PostSchema: Schema = new Mongoose.Schema(
     {
