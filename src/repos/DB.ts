@@ -20,23 +20,12 @@ const PostSchema: Schema = new Mongoose.Schema(
       Contenido: {type: String, required:true},
       Fecha: {type: Date, required:true},
       IdUsuario: {type: Number, required:true},
-      Comentarios: [
-        {
-        usuarioId: Number,
-        Contenido: String,
-        fecha: Date,
-        cantLikes: Number,
-        IdComentario: Number,
-        UsersLikes: [Number]
-        }
-      ],
-      CantLikes: {type: Number, required:true}
     },
     {collection: "posts", versionKey: false}
 );
 
 
-export const db: Connection = Mongoose.createConnection("mongodb://localhost:27017/LocalME");
+export const db: Connection = Mongoose.createConnection("mongodb://127.0.0.1:27017/LocalME");
 
 export const UserModel = db.model<IUsuario>("users", UserSchema);
 export const PostModel = db.model<IPost>("posts", PostSchema);
